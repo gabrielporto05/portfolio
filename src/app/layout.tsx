@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Providers } from "@/providers";
+import { Footer } from "@/components/Footer";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: "500",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <main className="min-h-[calc(100vh-80px)]">{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>
