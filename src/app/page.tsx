@@ -16,23 +16,24 @@ export default function HomePage() {
         <div className="mt-6 flex justify-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/50 rounded-full">
             <Code className="h-4 w-4 text-primary" />
-            <span className="font-medium">Desenvolvedor Web e Mobile</span>
+            <span className="font-medium">Web e Mobile Developer</span>
           </div>
         </div>
 
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Especialista em Front End com React e Next.js, criando interfaces
-          performáticas, acessíveis e com ótima experiência de usuário.
+          Especialista em desenvolvimento Front End utilizando tecnologias
+          modernas, criando interfaces performáticas, acessíveis e com ótima
+          experiência de usuário.
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Link href="#projects">
+          <Link href="/projects">
             <Button size="lg">
               Ver Projetos
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
-          <Link href="#contact">
+          <Link href="/contact">
             <Button variant="outline" size="lg">
               Contato Direto
             </Button>
