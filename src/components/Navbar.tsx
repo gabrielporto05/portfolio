@@ -10,6 +10,12 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -46,19 +52,22 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            aria-label="Alternar tema"
-            className="inline-flex"
-          >
-            {theme === "dark" ? (
-              <Sun className="h-4 w-4" />
-            ) : (
-              <Moon className="h-4 w-4" />
-            )}
-          </Button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                >
+                  {theme === "light" ? <Moon /> : <Sun />}
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                {theme === "light" ? "Light theme" : "Dark theme"}
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
 
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
