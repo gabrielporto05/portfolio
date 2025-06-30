@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Smartphone, Globe } from "lucide-react";
+import SkillCard from "@/components/SkillCard";
+import SpecialtyCard from "@/components/SpecialtyCard";
 
 export default function HomePage() {
   return (
@@ -40,7 +42,7 @@ export default function HomePage() {
 
       <section id="specialties" className="w-full mb-24">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Minha Especialidade
+          Minhas Especialidades
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -114,34 +116,5 @@ export default function HomePage() {
         </Link>
       </section>
     </main>
-  );
-}
-
-function SpecialtyCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
-  return (
-    <div className="border rounded-lg p-6 hover:border-primary transition-colors">
-      <div className="flex items-center gap-4 mb-4">
-        <div className="p-2 rounded-md bg-primary/10 text-primary">{icon}</div>
-        <h3 className="text-xl font-semibold">{title}</h3>
-      </div>
-      <p className="text-muted-foreground">{description}</p>
-    </div>
-  );
-}
-
-function SkillCard({ label, category }: { label: string; category: string }) {
-  return (
-    <div className="border rounded-lg p-4 hover:border-primary transition-colors">
-      <div className="font-medium">{label}</div>
-      <div className="text-xs text-muted-foreground mt-1">{category}</div>
-    </div>
   );
 }
