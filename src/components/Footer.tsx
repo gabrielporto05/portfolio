@@ -31,6 +31,7 @@ export function Footer() {
               </Link>
               <Link
                 href="mailto:gpalmenara@gmail.com"
+                target="_blank"
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
                 <Mail className="h-5 w-5" />
