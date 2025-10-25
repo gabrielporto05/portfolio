@@ -174,7 +174,7 @@ export default function ContactPage() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="https://github.com/chines05"
+                href="https://github.com/gabrielporto05"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-accent text-primary hover:bg-primary/10 transition-colors"

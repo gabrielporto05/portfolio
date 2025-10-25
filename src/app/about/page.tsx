@@ -1,9 +1,9 @@
 "use client";
+
 import Image from "next/image";
 import { GraduationCap, Code, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import PhilosophyCard from "@/components/PhilosophyCard";
 import TimelineItem from "@/components/TimelineItem";
 
 export default function AboutPage() {
@@ -107,25 +107,6 @@ export default function AboutPage() {
               side="left"
             />
           </div>
-        </div>
-      </section>
-
-      <section className="w-full mb-24">
-        <h2 className="text-3xl font-bold text-center mb-12">Como Trabalho</h2>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <PhilosophyCard
-            title="Código como Arte"
-            description="Trato cada projeto como uma obra de arte - limpa, bem estruturada e com atenção aos detalhes. Utilizo TypeScript para segurança e clareza."
-          />
-          <PhilosophyCard
-            title="Mobile-First"
-            description="Desenho interfaces pensando primeiro na experiência mobile, garantindo performance mesmo em dispositivos limitados."
-          />
-          <PhilosophyCard
-            title="Aprendizado Contínuo"
-            description="Estou sempre buscando novos conhecimentos e tecnologias para me tornar um desenvolvedor mais eficiente e especializado."
-          />
         </div>
       </section>
 

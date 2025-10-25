@@ -96,27 +96,12 @@ export default function ProjectsPage() {
           <ServiceCard
             icon={<Smartphone className="h-8 w-8" />}
             title="Aplicativos Mobile"
-            description="Soluções cross-platform com React Native e integrações nativas."
+            description="Desenvolvimento de apps móveis com React Native e Expo para iOS e Android."
           />
           <ServiceCard
             icon={<Server className="h-8 w-8" />}
             title="APIs e Backend"
-            description="Desenvolvimento de APIs RESTful com Node.js, Express e bancos de dados relacionais."
-          />
-          <ServiceCard
-            icon={<Database className="h-8 w-8" />}
-            title="Consultoria em Arquitetura"
-            description="Orientação na estruturação de projetos e sistemas escaláveis."
-          />
-          <ServiceCard
-            icon={<LayoutTemplate className="h-8 w-8" />}
-            title="UI/UX Implementation"
-            description="Implementação fiel de designs com atenção a detalhes e sistemas de design."
-          />
-          <ServiceCard
-            icon={<Code className="h-8 w-8" />}
-            title="Manutenção e Otimização"
-            description="Refatoração de código legado e otimização de performance."
+            description="Desenvolvimento de APIs RESTful com Go(golang) utilizando Gin-Gonic e Node.js com Express ou Fastify."
           />
         </div>
       </section>

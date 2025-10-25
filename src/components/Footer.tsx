@@ -23,7 +23,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="https://github.com/chines05"
+                href="https://github.com/gabrielporto05"
                 target="_blank"
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
