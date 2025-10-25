@@ -1,12 +1,6 @@
 "use client";
-import {
-  Code,
-  Smartphone,
-  Globe,
-  Server,
-  Database,
-  LayoutTemplate,
-} from "lucide-react";
+
+import { Smartphone, Globe, Server } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
