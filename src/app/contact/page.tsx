@@ -58,39 +58,24 @@ export default function ContactPage() {
     setSubmitStatus(null)
     setProgress(100)
 
-    await new Promise(resolve => setTimeout(resolve, 1000))
-
     try {
-      const response = await fetch('https://formsubmit.co/ajax/gpalmenara@gmail.com', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json'
-        },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          subject: data.subject,
-          message: data.message,
-          _captcha: 'false',
-          _template: 'table',
-          _autoresponse: 'Obrigado pelo seu contato! Responderei em breve.',
-          _honey: ''
-        })
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
       })
 
       const result = await response.json()
-      if (response.ok) {
+      if (result.success) {
         setSubmitStatus('success')
         reset()
         toast.success('Mensagem enviada com sucesso!')
-      } else {
-        throw new Error(result.message || 'Falha ao enviar mensagem')
+
+        return
       }
-    } catch (error) {
-      console.error('Erro:', error)
+    } catch (err: any) {
       setSubmitStatus('error')
-      toast.error(error instanceof Error ? error.message : 'Ocorreu um erro. Tente novamente mais tarde.')
+      toast.error('Falha ao enviar a mensagem. Tente novamente mais tarde.')
     } finally {
       setIsSubmitting(false)
     }
