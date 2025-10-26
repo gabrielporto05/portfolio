@@ -73,7 +73,7 @@ export default function ContactPage() {
 
         return
       }
-    } catch (err: any) {
+    } catch {
       setSubmitStatus('error')
       toast.error('Falha ao enviar a mensagem. Tente novamente mais tarde.')
     } finally {
