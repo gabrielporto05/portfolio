@@ -1,15 +1,13 @@
 'use client'
 
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
-import { Moon, Sun, Menu } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
 import { Switch } from './ui/switch'
+import { Menu } from 'lucide-react'
 import { Label } from './ui/label'
+import Link from 'next/link'
 
 export function Navbar() {
   const pathname = usePathname()
