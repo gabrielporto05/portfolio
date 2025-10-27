@@ -7,10 +7,15 @@ import { Moon, Sun, Menu } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { Switch } from './ui/switch'
+import { Label } from './ui/label'
 
 export function Navbar() {
   const pathname = usePathname()
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, systemTheme } = useTheme()
+
+  const isDark = theme === 'dark' || (theme === 'system' && systemTheme === 'dark')
 
   const routes = [
     { name: 'Home', path: '/' },
@@ -41,16 +46,16 @@ export function Navbar() {
         </div>
 
         <div className='flex items-center gap-2'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button variant='ghost' size='icon' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-                  {theme === 'light' ? <Moon /> : <Sun />}
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>{theme === 'light' ? 'Light theme' : 'Dark theme'}</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          <div className='flex items-center gap-2'>
+            <Label htmlFor='theme-switch' className='text-sm'>
+              {isDark ? 'Dark' : 'Light'}
+            </Label>
+            <Switch
+              id='theme-switch'
+              checked={isDark}
+              onCheckedChange={checked => setTheme(checked ? 'dark' : 'light')}
+            />
+          </div>
 
           <Sheet>
             <SheetTrigger asChild className='md:hidden'>
