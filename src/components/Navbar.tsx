@@ -51,6 +51,7 @@ export function Navbar() {
             <Switch
               id='theme-switch'
               checked={isDark}
+              className='cursor-pointer'
               onCheckedChange={checked => setTheme(checked ? 'dark' : 'light')}
             />
           </div>
