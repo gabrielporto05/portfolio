@@ -1,10 +1,10 @@
 'use client'
 
 import { Smartphone, Globe, Server } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
 import ProjectCard from '@/components/ProjectCard'
 import ServiceCard from '@/components/ServiceCard'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function ProjectsPage() {
   return (

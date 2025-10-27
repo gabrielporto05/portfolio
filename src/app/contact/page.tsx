@@ -1,12 +1,12 @@
 'use client'
 
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react'
+import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
-import { useState, useEffect } from 'react'
 
 type FormData = {
   name: string

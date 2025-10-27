@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "deploy": "git pull origin main && npm i && npm build && nohup npm start & && systemctl restart nginx"
+    "update": "git pull origin main && npm i && npm run build"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",

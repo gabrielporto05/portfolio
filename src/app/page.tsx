@@ -1,9 +1,10 @@
 'use client'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+
 import { ArrowRight, Code, Smartphone, Globe } from 'lucide-react'
-import SkillCard from '@/components/SkillCard'
 import SpecialtyCard from '@/components/SpecialtyCard'
+import { Button } from '@/components/ui/button'
+import SkillCard from '@/components/SkillCard'
+import Link from 'next/link'
 
 export default function HomePage() {
   return (
@@ -66,22 +67,33 @@ export default function HomePage() {
         <h2 className='text-3xl font-bold text-center mb-12'>Minhas Skills</h2>
 
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4'>
+          {/* Linguagens */}
           <SkillCard label='TypeScript' category='Linguagens' />
           <SkillCard label='JavaScript' category='Linguagens' />
-          <SkillCard label='PHP' category='Linguagens' />
+
+          {/* Frontend & Mobile */}
           <SkillCard label='React.js' category='Frontend' />
           <SkillCard label='Next.js' category='Frontend' />
-          <SkillCard label='Tailwind CSS' category='Styling' />
-          <SkillCard label='Shadcn UI' category='UI Libraries' />
-          <SkillCard label='MUI' category='UI Libraries' />
           <SkillCard label='React Native' category='Mobile' />
-          <SkillCard label='Expo' category='Mobile' />
+
+          {/* UI/UX */}
+          <SkillCard label='Tailwind CSS' category='UI/UX' />
+          <SkillCard label='Material UI' category='UI/UX' />
+          <SkillCard label='Styled Components' category='UI/UX' />
+          <SkillCard label='Figma' category='UI/UX' />
+
+          {/* Backend */}
           <SkillCard label='Node.js' category='Backend' />
-          <SkillCard label='Laravel' category='Backend' />
-          <SkillCard label='Express | Fastify' category='Backend' />
-          <SkillCard label='MySQL' category='Database' />
-          <SkillCard label='PostgreSQL' category='Database' />
-          <SkillCard label='Git/GitHub' category='Ferramentas' />
+          <SkillCard label='Go' category='Backend' />
+          <SkillCard label='APIs REST' category='Backend' />
+
+          {/* Banco de Dados & ORM */}
+          <SkillCard label='MySQL & PostgreSQL' category='Database' />
+          <SkillCard label='Prisma & GORM' category='ORM' />
+
+          {/* Ferramentas & Metodologias */}
+          <SkillCard label='Git, GitHub & GitLab' category='Ferramentas' />
+          <SkillCard label='Scrum' category='Metodologias' />
         </div>
       </section>
 

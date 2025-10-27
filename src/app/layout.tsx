@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import './globals.css'
+import { Footer } from '@/components/Footer'
 import { Navbar } from '@/components/Navbar'
 import { ThemeProviders } from '@/providers'
-import { Footer } from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
+import type { Metadata } from 'next'
+import './globals.css'
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: '500',

@@ -1,4 +1,9 @@
-const SkillCard = ({ label, category }: { label: string; category: string }) => {
+type SkillCardProps = {
+  label: string
+  category: string
+}
+
+const SkillCard = ({ label, category }: SkillCardProps) => {
   return (
     <div className='border rounded-lg p-4 hover:border-primary transition-colors hover:scale-105'>
       <div className='font-medium'>{label}</div>

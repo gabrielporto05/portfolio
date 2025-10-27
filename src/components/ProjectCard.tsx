@@ -1,7 +1,18 @@
 'use client'
-import Image from 'next/image'
+
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 import Link from 'next/link'
+
+type ProjectCardProps = {
+  title: string
+  description: string
+  technologies: string[]
+  imageUrl?: string
+  projectUrl?: string
+  githubUrl?: string
+  featured?: boolean
+}
 
 const ProjectCard = ({
   title,
@@ -11,15 +22,7 @@ const ProjectCard = ({
   projectUrl,
   githubUrl,
   featured = false
-}: {
-  title: string
-  description: string
-  technologies: string[]
-  imageUrl?: string
-  projectUrl?: string
-  githubUrl?: string
-  featured?: boolean
-}) => {
+}: ProjectCardProps) => {
   return (
     <div className={`border rounded-lg overflow-hidden ${featured ? 'md:col-span-2' : ''}`}>
       {imageUrl && (

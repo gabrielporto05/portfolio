@@ -1,4 +1,10 @@
-const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => {
+type ServiceCardProps = {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
   return (
     <div className='border rounded-lg p-6 hover:border-primary transition-all hover:shadow-md'>
       <div className='flex items-center gap-4 mb-4'>

@@ -1,10 +1,10 @@
 'use client'
 
-import Image from 'next/image'
 import { GraduationCap, Code, Smartphone } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
 import TimelineItem from '@/components/TimelineItem'
+import { Button } from '@/components/ui/button'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function AboutPage() {
   return (

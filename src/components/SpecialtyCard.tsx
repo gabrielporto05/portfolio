@@ -1,4 +1,10 @@
-const SpecialtyCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => {
+type SpecialtyCardProps = {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+const SpecialtyCard = ({ icon, title, description }: SpecialtyCardProps) => {
   return (
     <div className='border rounded-lg p-6 hover:border-primary transition-colors hover:scale-105'>
       <div className='flex items-center gap-4 mb-4'>

@@ -1,18 +1,13 @@
-const TimelineItem = ({
-  date,
-  title,
-  subtitle,
-  icon,
-  description,
-  side
-}: {
+type TimelineItemProps = {
   date: string
   title: string
   subtitle: string
   icon: React.ReactNode
   description: string
   side: 'left' | 'right'
-}) => {
+}
+
+const TimelineItem = ({ date, title, subtitle, icon, description, side }: TimelineItemProps) => {
   return (
     <div className={`relative flex ${side === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'} items-start gap-6`}>
       <div
