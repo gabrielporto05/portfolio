@@ -1,4 +1,4 @@
-import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Space_Grotesk } from 'next/font/google'
 import { Footer } from '@/components/Footer'
 import { Navbar } from '@/components/Navbar'
 import { ThemeProviders } from '@/providers'
@@ -6,10 +6,10 @@ import { Toaster } from 'react-hot-toast'
 import type { Metadata } from 'next'
 import './globals.css'
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  weight: '500',
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-jakarta',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-space-grotesk',
   display: 'swap'
 })
 
@@ -83,7 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </script>
       </head>
-      <body className={`${plusJakartaSans.className} antialiased`}>
+      <body className={`${spaceGrotesk.className} antialiased`}>
         <ThemeProviders>
           <Navbar />
           <main className='min-h-[calc(100vh-80px)]'>{children}</main>
