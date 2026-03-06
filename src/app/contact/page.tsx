@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react'
+import { Mail, MapPin, Send, Linkedin, Github, Phone } from 'lucide-react'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -112,7 +112,6 @@ export default function ContactPage() {
                 </a>
               </div>
             </div>
-
             <div className='flex items-start gap-4'>
               <Phone className='h-5 w-5 mt-1 text-primary' />
               <div>
@@ -122,12 +121,11 @@ export default function ContactPage() {
                 </a>
               </div>
             </div>
-
             <div className='flex items-start gap-4'>
               <MapPin className='h-5 w-5 mt-1 text-primary' />
               <div>
                 <h3 className='font-medium'>Localização</h3>
-                <p className='text-muted-foreground'>Minas Gerais, Brasil</p>
+                <p className='text-muted-foreground'>Almenara, Minas Gerais</p>
               </div>
             </div>
           </div>

@@ -22,47 +22,47 @@ export default function ProjectsPage() {
         <h2 className='text-3xl font-bold text-center mb-12'>Destaque</h2>
         <ProjectCard
           title='Pharus - Gestão de Eventos'
-          description='Plataforma completa para gerenciamento de eventos acadêmicos e corporativos, atendendo mais de 15 mil usuários.'
-          technologies={['Next.js', 'TypeScript', 'Laravel', 'PHP', 'MySQL', 'MUI']}
+          description='Plataforma oficial do IFNMG para gestão de eventos, com SSR/SSG, formulários tipados e integrações seguras que atendem mais de 15 mil usuários.'
+          technologies={['Next.js', 'TypeScript', 'SSR/SSG', 'Spring Boot APIs', 'PostgreSQL']}
           imageUrl='/imgs/Eventos.png'
-          projectUrl='https://pharus.ifalmenara.com.br/'
-          githubUrl='https://github.com/chines05'
+          projectUrl='https://eventos.ifalmenara.com.br/'
           featured
         />
       </section>
 
       <section className='w-full mb-24'>
-        <h2 className='text-3xl font-bold text-center mb-12'>Projetos Pessoais</h2>
+        <h2 className='text-3xl font-bold text-center mb-12'>Projetos de Destaque</h2>
 
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectCard
-            title='Sistema Academico de Notas - IFNMG'
-            description='Sistema acadêmico para controle de notas e avaliação de alunos.'
-            technologies={['Expo', 'React Native', 'MySQL', 'PHP', 'Laravel']}
-            imageUrl='/imgs/AppIFNMG.png'
-            githubUrl='https://github.com/chines05/Sistema-Academico-de-Notas-IFNMG'
+            title='Cajuí Mobile'
+            description='App oficial para modernizar o acesso acadêmico de alunos e servidores, com notificações em tempo real e consumo de APIs complexas.'
+            technologies={['React Native', 'Expo Router', 'TypeScript', 'Push Notifications']}
+            imageUrl='/imgs/Cajui.png'
           />
 
           <ProjectCard
-            title='Sistema Academico de Notas - IFNMG'
-            description='Sistema acadêmico para controle de notas e avaliação de alunos.'
-            technologies={['Expo', 'React Native', 'MySQL', 'PHP', 'Laravel']}
-            imageUrl='/imgs/AppIFNMG.png'
-            githubUrl='https://github.com/chines05/Sistema-Academico-de-Notas-IFNMG'
+            title='Vitrine de Projetos (IFNMG)'
+            description='Plataforma institucional para gestão e exposição de projetos acadêmicos, conectando equipes e avaliadores.'
+            technologies={['React.js', 'Vite', 'TypeScript', 'Tailwind CSS', 'Fastify', 'Prisma', 'JWT']}
+            imageUrl='/imgs/VitrineProjetos.png'
+            projectUrl='https://projetos.ifalmenara.com.br'
           />
 
           <ProjectCard
-            title='Sistema de Gerenciamento de Eventos Acadêmicos - Trabalho POO'
-            description='Sistema de gerenciamento de eventos acadêmicos com controle de participantes, atividades e pagamentos. Desenvolvido em Java com POO, SQLite e tratamento de exceções.'
-            technologies={['Java', 'SQLite']}
-            githubUrl='https://github.com/chines05/Sistema-de-Gerenciamento-de-Eventos-Academicos'
+            title='RB SOFT Soluções'
+            description='Landing page institucional otimizada para performance, responsividade e SEO.'
+            technologies={['React.js', 'Vite', 'Tailwind CSS', 'SEO']}
+            imageUrl='/imgs/RbSoft.png'
+            projectUrl='https://rbsoft.inf.br'
           />
 
           <ProjectCard
-            title='Preciso fazer mais projetos'
-            description='Projeto em desenvolvimento!'
-            technologies={['Nenhuma tecnologia']}
-            githubUrl='https://github.com/chines05'
+            title='Sistema de Gerenciamento de Eventos Acadêmicos'
+            description='Aplicação desktop em Java com POO, SQLite e tratamento de exceções para cadastro e controle de eventos, participantes e pagamentos.'
+            technologies={['Java', 'SQLite', 'POO']}
+            imageUrl='https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1600&q=80'
+            githubUrl='https://github.com/gabrielporto05/Sistema-de-Gerenciamento-de-Eventos-Academicos'
           />
         </div>
       </section>
@@ -73,18 +73,18 @@ export default function ProjectsPage() {
         <div className='grid md:grid-cols-3 gap-8'>
           <ServiceCard
             icon={<Globe className='h-8 w-8' />}
-            title='Desenvolvimento Web'
-            description='Aplicações modernas com React, Next.js e TypeScript. Performance, SEO e responsividade.'
+            title='APIs e Back-end Java'
+            description='Spring Boot, segurança, validação, JPA e documentação clara para integrações confiáveis.'
           />
           <ServiceCard
             icon={<Smartphone className='h-8 w-8' />}
-            title='Aplicativos Mobile'
-            description='Desenvolvimento de apps móveis com React Native e Expo para iOS e Android.'
+            title='Front-end Next.js & TypeScript'
+            description='Interfaces performáticas com SSR/SSG, acessibilidade e componentização escalável.'
           />
           <ServiceCard
             icon={<Server className='h-8 w-8' />}
-            title='APIs e Backend'
-            description='Desenvolvimento de APIs RESTful com Go(golang) utilizando Gin-Gonic e Node.js com Express ou Fastify.'
+            title='Aplicativos Mobile'
+            description='Apps React Native com Expo Router, notificações e experiência fluida em múltiplos dispositivos.'
           />
         </div>
       </section>
@@ -92,7 +92,8 @@ export default function ProjectsPage() {
       <section className='w-full text-center'>
         <h2 className='text-2xl font-bold mb-4'>Interessado em algum projeto ou serviço?</h2>
         <p className='text-muted-foreground mb-6 max-w-xl mx-auto'>
-          Posso desenvolver uma solução personalizada para suas necessidades específicas.
+          Posso desenvolver uma solução personalizada com a combinação certa de Java/Spring Boot, Next.js e React
+          Native.
         </p>
         <Link href='/contact'>
           <Button size='lg' className='px-8'>

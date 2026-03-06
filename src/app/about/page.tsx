@@ -14,7 +14,8 @@ export default function AboutPage() {
           Minha <span className='text-primary'>Jornada</span>
         </h1>
         <p className='text-lg text-muted-foreground max-w-3xl mx-auto'>
-          Da formação técnica aos desafios profissionais, cada linha de código escrita conta parte da minha história.
+          Da formação técnica aos sistemas que atendem mais de 15 mil usuários, cada entrega reflete meu foco em
+          qualidade, performance e impacto real.
         </p>
       </section>
 
@@ -33,24 +34,21 @@ export default function AboutPage() {
           <h2 className='text-2xl font-bold mb-4'>Quem sou eu</h2>
           <div className='space-y-4 text-muted-foreground'>
             <p>
-              Me chamo <strong>Gabriel Martins Moraes Porto</strong>, tenho 19 anos e sou um desenvolvedor Web & Mobile
-              com foco em desenvolvimento Front End. Gosto de trabalhar com tecnologias modernas e construir interfaces
-              funcionais, bem organizadas e com atenção à performance.
+              Sou <strong>Gabriel Martins Moraes Porto</strong>, Desenvolvedor Full Stack especializado em unir
+              back-ends seguros com <strong>Java e Spring Boot</strong> a front-ends rápidos com{' '}
+              <strong>Next.js e TypeScript</strong>.
             </p>
             <p>
-              Iniciei minha trajetória técnica durante o curso de Informática no ensino médio (EE Tancredo Neves,
-              2021–2023), e atualmente curso <strong>Análise e Desenvolvimento de Sistemas</strong> no IFNMG. Com isso,
-              venho consolidando conhecimentos práticos e acadêmicos em desenvolvimento web.
+              Hoje integro o ecossistema digital do <strong>IFNMG</strong>, onde contribuo para o{' '}
+              <strong>Pharus</strong> (gestão de eventos em larga escala) e para o <strong>Cajuí Mobile</strong>
+              (experiência acadêmica moderna em dispositivos móveis).
             </p>
             <p>
-              Desde agosto de 2024, atuo como desenvolvedor na <strong>plataforma Pharus – Gestão de Eventos</strong>,
-              onde sou responsável por entregar soluções front-end com Next.js, TypeScript e integrações com APIs.
-              Também desenvolvo projetos pessoais e freelances voltados para interfaces responsivas e boas práticas de
-              código.
+              Minha abordagem combina <strong>Clean Code</strong>, SSR/SSG, autenticação segura e integrações bem
+              tipadas. Trabalho com Scrum, documentação clara e versionamento disciplinado.
             </p>
             <p>
-              Prezo por consistência, clareza na estruturação do projeto, versionamento limpo e entregas bem
-              documentadas — sempre com foco em propósito real e experiência do usuário.
+              Busco criar soluções que permaneçam robustas em produção e ofereçam experiências fluidas para quem usa.
             </p>
           </div>
         </div>
@@ -73,29 +71,29 @@ export default function AboutPage() {
             />
 
             <TimelineItem
-              date='2024 - Atual'
-              title='Análise e Desenvolvimento de Sistemas'
+              date='2024 - 2026 (previsto)'
+              title='Tecnólogo em Análise e Desenvolvimento de Sistemas'
               subtitle='IFNMG - Superior Tecnológico'
               icon={<GraduationCap className='h-5 w-5' />}
-              description='Aprofundamento em engenharia de software, arquitetura de sistemas e desenvolvimento web e mobile.'
+              description='Aprofundamento em engenharia de software, arquitetura de sistemas e desenvolvimento web/mobile.'
               side='left'
             />
 
             <TimelineItem
-              date='Ago 2024 - Atual'
-              title='Desenvolvedor Front End'
-              subtitle='Pharus - Gestão de Eventos'
+              date='Mai 2024 - Ago 2025'
+              title='Desenvolvedor Front-End'
+              subtitle='IFNMG | Plataforma Pharus'
               icon={<Code className='h-5 w-5' />}
-              description='Desenvolvimento da plataforma web usando Next.js e TypeScript. Responsável por implementar interfaces responsivas, componentização e integração com APIs REST.'
+              description='Next.js com TypeScript, SSR/SSG, formulários tipados e acessíveis para uma plataforma que atende mais de 15 mil usuários.'
               side='right'
             />
 
             <TimelineItem
-              date='2024 - Atual'
-              title='Projetos Pessoais'
-              subtitle='Freelances e Projetos Pessoais'
+              date='Ago 2025 - Atual'
+              title='Desenvolvedor de Software Mobile'
+              subtitle='IFNMG | Cajuí Mobile'
               icon={<Smartphone className='h-5 w-5' />}
-              description='Desenvolvimento de aplicações web e mobile para clientes e projetos pessoais, explorando novas tecnologias como PHP com Laravel.'
+              description='Construção de app oficial com React Native e Expo Router, consumo de APIs complexas e sincronização em tempo real (notificações).'
               side='left'
             />
           </div>
@@ -105,8 +103,8 @@ export default function AboutPage() {
       <section className='w-full text-center'>
         <h2 className='text-2xl font-bold mb-4'>Vamos construir algo incrível?</h2>
         <p className='text-muted-foreground mb-6 max-w-xl mx-auto'>
-          Se você busca um desenvolvedor Front End comprometido, profissional, em busca de crescimento e aprendizado,
-          estou aqui para ajudar.
+          Se você busca um desenvolvedor Full Stack que una Java/Spring Boot e Next.js para entregar valor rápido e
+          sustentável, vamos conversar.
         </p>
         <div className='flex flex-wrap justify-center gap-4'>
           <Link href='/contact'>

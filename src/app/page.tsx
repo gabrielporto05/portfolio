@@ -11,19 +11,24 @@ export default function HomePage() {
     <main className='flex flex-col items-center px-6 py-16 md:py-24 max-w-6xl mx-auto'>
       <section className='w-full text-center mb-24'>
         <h1 className='text-4xl sm:text-5xl font-bold leading-tight tracking-tight'>
-          Olá, eu sou <span className='text-primary'>Gabriel Porto</span>
+          Olá, eu sou <span className='text-primary'>Gabriel Martins Moraes Porto</span>
         </h1>
 
         <div className='mt-6 flex justify-center'>
           <div className='inline-flex items-center gap-2 px-4 py-2 bg-accent/50 rounded-full'>
             <Code className='h-4 w-4 text-primary' />
-            <span className='font-medium'>Web e Mobile Developer</span>
+            <span className='font-medium'>Desenvolvedor Full Stack | Java & Spring Boot | Next.js & TypeScript</span>
           </div>
         </div>
 
         <p className='mt-6 text-lg text-muted-foreground max-w-2xl mx-auto'>
-          Especialista em desenvolvimento Front End utilizando tecnologias modernas, criando interfaces performáticas,
-          acessíveis e com ótima experiência de usuário.
+          Desenvolvedor focado em arquiteturas robustas e interfaces de alta performance, com experiência em sistemas
+          que atendem mais de 15 mil usuários.
+        </p>
+
+        <p className='mt-4 text-muted-foreground max-w-2xl mx-auto'>
+          Atualmente no ecossistema digital do IFNMG, contribuindo para o Pharus (gestão de eventos) e para o app Cajuí
+          Mobile, unindo um back-end seguro em Java/Spring Boot a front-ends rápidos em Next.js e React Native.
         </p>
 
         <div className='mt-8 flex flex-wrap justify-center gap-4'>
@@ -47,18 +52,18 @@ export default function HomePage() {
         <div className='grid md:grid-cols-3 gap-8'>
           <SpecialtyCard
             icon={<Globe className='h-8 w-8' />}
-            title='Desenvolvimento Web'
-            description='Aplicações modernas com React, Next.js e TypeScript. Foco em performance, SEO e boas práticas.'
+            title='Back-end Java & Spring Boot'
+            description='APIs RESTful com segurança, validação, JPA e integrações prontas para produção.'
           />
           <SpecialtyCard
             icon={<Smartphone className='h-8 w-8' />}
-            title='Mobile Apps'
-            description='Soluções cross-platform com React Native, integrações nativas e experiência fluída.'
+            title='Front-end Next.js & TypeScript'
+            description='Experiências rápidas com App Router, SSR/SSG, acessibilidade e componentes reusáveis.'
           />
           <SpecialtyCard
             icon={<Code className='h-8 w-8' />}
-            title='UI/UX Implementation'
-            description='Implementação fiel de designs com TailwindCSS, Shadcn UI e sistemas de design consistentes.'
+            title='Mobile com React Native'
+            description='Aplicativos com Expo Router, notificações e sincronização em tempo real para alunos e equipes.'
           />
         </div>
       </section>
@@ -67,42 +72,46 @@ export default function HomePage() {
         <h2 className='text-3xl font-bold text-center mb-12'>Minhas Skills</h2>
 
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4'>
-          {/* Linguagens */}
-          <SkillCard label='TypeScript' category='Linguagens' />
-          <SkillCard label='JavaScript' category='Linguagens' />
+          {/* Back-End */}
+          <SkillCard label='Java 17/21' category='Back-End' />
+          <SkillCard label='Spring Boot' category='Back-End' />
+          <SkillCard label='Spring Security & JWT' category='Back-End' />
+          <SkillCard label='Spring Data JPA' category='Back-End' />
+          <SkillCard label='APIs RESTful & Bean Validation' category='Back-End' />
+          <SkillCard label='Node.js' category='Back-End' />
+          <SkillCard label='Go (Golang)' category='Back-End' />
 
-          {/* Frontend & Mobile */}
-          <SkillCard label='React.js' category='Frontend' />
-          <SkillCard label='Next.js' category='Frontend' />
+          {/* Front-End */}
+          <SkillCard label='Next.js (App Router)' category='Front-End' />
+          <SkillCard label='React.js' category='Front-End' />
+          <SkillCard label='TypeScript' category='Front-End' />
+          <SkillCard label='Tailwind CSS' category='Front-End' />
+          <SkillCard label='Material UI' category='Front-End' />
+          <SkillCard label='Gerenciamento de Estado' category='Front-End' />
+
+          {/* Mobile */}
           <SkillCard label='React Native' category='Mobile' />
+          <SkillCard label='Expo Router' category='Mobile' />
+          <SkillCard label='React Native Paper' category='Mobile' />
 
-          {/* UI/UX */}
-          <SkillCard label='Tailwind CSS' category='UI/UX' />
-          <SkillCard label='Material UI' category='UI/UX' />
-          <SkillCard label='Styled Components' category='UI/UX' />
-          <SkillCard label='Figma' category='UI/UX' />
+          {/* Banco de Dados */}
+          <SkillCard label='PostgreSQL' category='Banco de Dados' />
+          <SkillCard label='MySQL' category='Banco de Dados' />
+          <SkillCard label='MongoDB' category='Banco de Dados' />
 
-          {/* Backend */}
-          <SkillCard label='Node.js' category='Backend' />
-          <SkillCard label='Go' category='Backend' />
-          <SkillCard label='APIs REST' category='Backend' />
-
-          {/* Banco de Dados & ORM */}
-          <SkillCard label='MySQL & PostgreSQL' category='Database' />
-          <SkillCard label='Prisma & GORM' category='ORM' />
-
-          {/* Ferramentas & Metodologias */}
-          <SkillCard label='Git, GitHub & GitLab' category='Ferramentas' />
-          <SkillCard label='Scrum' category='Metodologias' />
+          {/* Ferramentas */}
+          <SkillCard label='Git & GitHub' category='Ferramentas' />
+          <SkillCard label='Docker' category='Ferramentas' />
+          <SkillCard label='Scrum' category='Ferramentas' />
         </div>
       </section>
 
       <section id='about' className='w-full max-w-3xl mx-auto mb-24'>
         <h2 className='text-3xl font-bold text-center mb-8'>Sobre Mim</h2>
         <p className='text-muted-foreground leading-relaxed text-center'>
-          Formado pelo IFNMG, desenvolvo soluções web e mobile com foco em código limpo e experiências de usuário bem
-          fundamentadas. Atualmente colaboro em projetos institucionais pelo IFNMG, como Desenvolvedor de Software.
-          Valorizo trabalhos colaborativos, boas práticas e tecnologias modernas.
+          Sou Desenvolvedor de Software Full Stack com foco em sistemas escaláveis e de alta performance utilizando o
+          ecossistema Java (Spring Boot) no back-end e Next.js (TypeScript) no front-end. Minha abordagem combina código
+          limpo, SSR/SSG e integrações seguras para entregar valor real aos usuários.
         </p>
         <div className='mt-8 text-center'>
           <Link href='/about'>
@@ -114,7 +123,7 @@ export default function HomePage() {
       <section id='contact' className='w-full text-center'>
         <h2 className='text-3xl font-bold mb-4'>Vamos conversar?</h2>
         <p className='text-muted-foreground mb-8 max-w-xl mx-auto'>
-          Estou disponível para oportunidades, projetos freelance ou apenas para trocar ideias sobre tecnologia.
+          Aberto a oportunidades, projetos freelance ou parcerias onde Java/Spring Boot e Next.js façam a diferença.
         </p>
         <Link href='/contact'>
           <Button size='lg' className='px-8'>

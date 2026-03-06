@@ -24,6 +24,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true, data })
   } catch (error) {
+    console.error('Error:', error)
     return NextResponse.json({ success: false, error })
   }
 }
