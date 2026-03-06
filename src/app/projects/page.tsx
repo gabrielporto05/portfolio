@@ -59,7 +59,7 @@ export default function ProjectsPage() {
 
           <ProjectCard
             title='Sistema de Gerenciamento de Eventos Acadêmicos'
-            description='Aplicação desktop em Java com POO, SQLite e tratamento de exceções para cadastro e controle de eventos, participantes e pagamentos.'
+            description='Aplicação de linha de comando em Java com POO, SQLite e tratamento de exceções para cadastro e controle de eventos, participantes e pagamentos.'
             technologies={['Java', 'SQLite', 'POO']}
             imageUrl='https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1600&q=80'
             githubUrl='https://github.com/gabrielporto05/Sistema-de-Gerenciamento-de-Eventos-Academicos'
