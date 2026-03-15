@@ -6,7 +6,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portfólio e Serviços',
+  title: 'Gabriel Porto | Desenvolvedor Full Stack',
   description:
     'Conheça os principais projetos, especialidades e serviços de Gabriel Porto em desenvolvimento web, mobile e back-end.',
   openGraph: {
