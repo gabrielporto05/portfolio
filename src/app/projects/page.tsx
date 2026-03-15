@@ -1,10 +1,22 @@
-'use client'
-
 import { Smartphone, Globe, Server } from 'lucide-react'
 import ProjectCard from '@/components/ProjectCard'
 import ServiceCard from '@/components/ServiceCard'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Projetos e Serviços',
+  description:
+    'Portfólio de projetos de Gabriel Porto, incluindo Pharus, Cajuí Mobile e serviços em Java, Spring Boot e Next.js.',
+  openGraph: {
+    title: 'Projetos de Gabriel Porto',
+    description:
+      'Confira cases como Pharus, Cajuí Mobile e soluções sob medida com Next.js, React Native e Spring Boot.',
+    url: 'https://gabrielporto.me/projects',
+    type: 'website'
+  }
+}
 
 export default function ProjectsPage() {
   return (

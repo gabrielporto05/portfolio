@@ -1,10 +1,22 @@
-'use client'
-
 import { ArrowRight, Code, Smartphone, Globe } from 'lucide-react'
 import SpecialtyCard from '@/components/SpecialtyCard'
 import { Button } from '@/components/ui/button'
 import SkillCard from '@/components/SkillCard'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Portfólio e Serviços',
+  description:
+    'Conheça os principais projetos, especialidades e serviços de Gabriel Porto em desenvolvimento web, mobile e back-end.',
+  openGraph: {
+    title: 'Portfólio de Gabriel Porto',
+    description:
+      'Especialista em Java/Spring Boot, Next.js, React Native e arquiteturas escaláveis. Veja projetos e serviços.',
+    url: 'https://gabrielporto.me/',
+    type: 'website'
+  }
+}
 
 export default function HomePage() {
   return (

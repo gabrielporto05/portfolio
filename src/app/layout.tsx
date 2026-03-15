@@ -14,23 +14,46 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Gabriel Porto | Desenvolvedor Web e Mobile',
-  description: 'Portfólio de Gabriel Porto – especialista em React, Next.js, Node.js, TypeScript, React Native e Go.',
+  title: {
+    default: 'Gabriel Porto | Desenvolvedor Web e Mobile',
+    template: '%s | Gabriel Porto'
+  },
+  description:
+    'Portfólio de Gabriel Porto – especialista em React, Next.js, Node.js, TypeScript, React Native, Go e Java/Spring Boot.',
   keywords: [
     'Gabriel Porto',
     'Desenvolvedor Web',
+    'Desenvolvedor Mobile',
     'React',
     'Next.js',
     'Node.js',
     'TypeScript',
     'React Native',
     'Go',
-    'Portfólio'
+    'Java',
+    'Spring Boot',
+    'Portfólio',
+    'Freelancer'
   ],
+  applicationName: 'Gabriel Porto Portfolio',
   authors: [{ name: 'Gabriel Porto', url: 'https://gabrielporto.me' }],
   creator: 'Gabriel Porto',
   publisher: 'Gabriel Porto',
   metadataBase: new URL('https://gabrielporto.me'),
+  alternates: {
+    canonical: '/'
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-snippet': -1,
+      'max-image-preview': 'large'
+    }
+  },
   icons: {
     icon: '/favicon.png'
   },
@@ -54,7 +77,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gabriel Porto | Desenvolvedor Web e Mobile',
     description: 'Portfólio de Gabriel Porto – especialista em aplicações modernas e escaláveis.',
-    images: ['https://gabrielporto.me/gabrielporto.jpeg']
+    images: ['https://gabrielporto.me/gabrielporto.jpeg'],
+    creator: '@gabrielporto'
+  },
+  verification: {
+    google: 'PPVFq0hUuQzG01luYHb07DRZsf63pO_q4DICkbXXW00'
   }
 }
 

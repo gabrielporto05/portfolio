@@ -1,10 +1,22 @@
-'use client'
-
 import { GraduationCap, Code, Smartphone } from 'lucide-react'
 import TimelineItem from '@/components/TimelineItem'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Sobre Gabriel Porto',
+  description:
+    'Trajetória profissional, formação e experiência de Gabriel Porto em desenvolvimento web, mobile e back-end.',
+  openGraph: {
+    title: 'Sobre Gabriel Porto',
+    description:
+      'Conheça a formação e a experiência de Gabriel Porto construindo produtos digitais em Java/Spring Boot e Next.js.',
+    url: 'https://gabrielporto.me/about',
+    type: 'profile'
+  }
+}
 
 export default function AboutPage() {
   return (
